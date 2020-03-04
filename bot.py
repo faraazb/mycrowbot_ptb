@@ -1,5 +1,5 @@
 import os
-token = os.environ[TELEGRAM_TOKEN]
+token = os.environ['TELEGRAM_TOKEN']
 
 from telegram.ext import Updater
 updater = Updater(token, use_context=True)
