@@ -1,1 +1,1 @@
-web: python bot.py 8443
+web: python bot.py
