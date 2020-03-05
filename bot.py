@@ -1,12 +1,11 @@
 import os
 token = os.environ['TELEGRAM_TOKEN']
 
-PORT = int(os.environ.get("PORT", "8443"))
-        HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
+PORT = int(os.environ['PORT'])
+HEROKU_APP_NAME = os.environ.['HEROKU_APP_NAME']
 updater.start_webhook(listen="0.0.0.0",
-                              port=PORT,
-                              url_path=TELEGRAM_TOKEN)
-        updater.bot.set_webhook("https://{}.herokuapp.com/".format(HEROKU_APP_NAME))
+                              port=PORT)
+updater.bot.set_webhook(url = "https://{}.herokuapp.com/".format(HEROKU_APP_NAME))
 
 from telegram.ext import Updater
 updater = Updater(token, use_context=True)
