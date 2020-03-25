@@ -93,7 +93,7 @@ def timetable(update, context):
 
 def sendtt(update, context):
     # div = update.callback_query.data
-    tt_ida = 'AgACAgUAAxkBAAJXmF56Be49xvY6xOFhxp9RGoWeQeKbAALSqTEb8nrRV2l0H6OvI7V4RbElMwAEAQADAgADeAAD0wMFAAEYBA'
+    tt_ida = 'https://i.imgur.com/wZRFYVo.jpg'
     # if div == 'DIVA':
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=tt_ida)
     # elif div == 'DIVB':
@@ -101,10 +101,10 @@ def sendtt(update, context):
     # elif div == 'DIVC':
     #     context.bot.send_photo(chat_id=update.effective_chat.id, photo=divc)
 def sendttb(update, context):
-    tt_idb = 'AgACAgUAAxkBAAJXm156CFyKUA_2PQABgleZYwABSAvNaFEAAlWpMRtEb9FXtfHrtLm2HgVpPxszAAQBAAMCAAN4AAPRjwUAARgE'
+    tt_idb = 'https://i.imgur.com/Cy6qGMc.jpg'
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=tt_idb)
 def sendttc(update, context):
-    tt_idc = 'AgACAgUAAxkBAAJXnl56CHTXUHRzCwsbg4MaviY4G1D0AALTqTEb8nrRV-iGInpDsN0Oc7YlMwAEAQADAgADeAAD1vkEAAEYBA'
+    tt_idc = 'https://i.imgur.com/pFdDxL8.jpg'
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=tt_idc)
 
 def library(update, context):
