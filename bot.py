@@ -193,7 +193,7 @@ def lis_event(update, context):
         # for item in evitems:
         #     text2s = (text2s + '▫️' + item + '\n\n')
         # text_start = 'Hello this is list']]]] ---depricated
-    context.bot.send_message(chat_id=update.effective_chat.id, parse_mode='MarkdownV2', disable_web_page_preview=True, text=text2s)
+        context.bot.send_message(chat_id=update.effective_chat.id, parse_mode='MarkdownV2', disable_web_page_preview=True, text=text2s)
 
 def cancelev(update, context):
     query = update.callback_query
